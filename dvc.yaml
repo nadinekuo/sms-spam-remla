@@ -19,3 +19,5 @@ stages:
     outs:
     - output/model.joblib
     - output/misclassified_msgs.txt
+    metrics:
+    - output/accuracy_scores.json

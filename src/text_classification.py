@@ -75,10 +75,14 @@ def main():
     file.close()
 
     print('\n############### Accuracy Scores ###############')
+    print('\n')
     accuracy = pd.DataFrame.from_dict(pred_scores, orient='index', columns=['Accuracy Rate'])
     print('\n')
     print(accuracy)
     print('\n')
+    # Save accuracy score to JSON file using json.dump
+    accuracy.to_json('output/accuracy_scores.json')
+
 
     #plot accuracy scores in a bar plot
     accuracy.plot(kind='bar', ylim=(0.85, 1.0), edgecolor='black', figsize=(10, 5))
