@@ -11,7 +11,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, BaggingClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from joblib import dump, load
-import matplotlib
 import matplotlib.pyplot as plt
 from text_preprocessing import _load_data
 
